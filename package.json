@@ -1,0 +1,26 @@
+{
+  "name": "cypressautomationpractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "headed": "npm run test -- --headed",
+    "chrome": "C:/Users/jagadishr/CypressAutomationPractice/node_modules/.bin/cypress -- --headed -- --browser chrome",
+    "dashboard": "C:/Users/jagadishr/CypressAutomationPractice/node_modules/.bin/cypress --record --key da862c17-98aa-46a2-a604-0ac409afbe82 --headed --reporter mochawesome"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.3.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-multi-reporters": "^1.6.2",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.1",
+    "@cypress/browserify-preprocessor": "latest"
+  }
+}
