@@ -12,11 +12,14 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
+// <reference types=”@shelex/cypress-allure-plugin” />
 // Import commands.js using ES2015 syntax:
 import './commands'
+import '@shelex/cypress-allure-plugin';
+
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
 require('@cypress/xpath');
+

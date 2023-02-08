@@ -1,0 +1,9 @@
+cypress/videos
+cypress/allure-results
+cypress/screenshots
+cypress/CucumberReports
+cypress/fixtures/TestData
+
+
+
+

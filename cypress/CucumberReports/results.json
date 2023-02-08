@@ -1,0 +1,130 @@
+[
+  {
+    "description": "    Application Regression Testing",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-to-the-application;naviagting-to-the-login-page",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Naviagting to the Login Page",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User navigates to the URL",
+            "result": {
+              "duration": 5284000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User should land on the Login Page",
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-the-application;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User navigates to the URL",
+            "result": {
+              "duration": 4476000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User should land on the Login Page",
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 12,
+            "name": "User enters the Valid Login Username and Password",
+            "result": {
+              "duration": 1019000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "UserName",
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "kalavathi.s@smc2.com",
+                  "Password@567"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 15,
+            "name": "Click on the Login button",
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 16,
+            "name": "User is successfully logged in to the application",
+            "result": {
+              "duration": 2873000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-to-the-application",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login to the Application",
+    "uri": "cypress\\integration\\features\\login.feature"
+  }
+]
