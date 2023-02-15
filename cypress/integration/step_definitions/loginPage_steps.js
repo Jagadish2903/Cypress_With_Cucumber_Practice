@@ -15,17 +15,13 @@ beforeEach(function () {
 
 //N:b AND is depricated from Cucumber so use When
 
-Given("User navigates to the loginPage url", function () {
+Given("User navigates to the login page", function () {
   cy.visit(Cypress.env("QAUrl"));
 });
 
-Then("User check the loginPage url", function () {
-  cy.url().should("be.equal", this.data.LoginPageUrl);
-});
-
-When("User enters the Valid Login Username and Password", function (dataTable) {
-  loginPage.setUserName(dataTable.rawTable[1][0]);
-  loginPage.setPassword(dataTable.rawTable[1][1]);
+When("User enters the {string} and {string}", function (username, password) {
+  loginPage.setUserName(username);
+  loginPage.setPassword(password);
 });
 
 When("Click on the Login button", function () {

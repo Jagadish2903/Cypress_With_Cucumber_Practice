@@ -15,6 +15,7 @@
     "@cypress/xpath": "^2.0.3",
     "@shelex/cypress-allure-plugin": "^2.34.1",
     "allure-commandline": "^2.20.1",
+    "chai": "^4.3.7",
     "cypress": "^12.3.0",
     "cypress-iframe": "^1.0.1",
     "cypress-multi-reporters": "^1.6.2",
@@ -28,16 +29,12 @@
       "enabled": true,
       "output": "cypress/CucumberReports/results.json",
       "nonGlobalStepDefinitions": false,
-      "stepDefinitions": "cypress/integration/step_definitions/**"
-      
-
+      "stepDefinitions": "cypress/integration/step_definitions/**/*.js"
     }
-   
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.1.2",
     "@cypress/browserify-preprocessor": "latest",
     "save-dev": "^0.0.1-security"
   }
-  
 }

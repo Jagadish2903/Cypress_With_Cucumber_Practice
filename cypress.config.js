@@ -21,18 +21,18 @@ module.exports = defineConfig({
   env: {
     allureReuseAfterSpec: true,
     allure: true,
-    allureResultsPath: "./cypress/allure-results",
+    allureResultsPath: "..cypress/",
     QAUrl: "https://qaportal.henry.com/login",
 
     stepDefinitions: [
-      "cypress/integration/step_definitions/login.js"
+      "cypress/integration/step_definitions/*.js"
     ]
 
 
   },
 
   e2e: {
-    specPattern: 'cypress/integration/features/login.feature', //using BDD
+    specPattern: 'cypress/integration/features/*.feature', //using BDD
     setupNodeEvents, //calling from the above code 
     supportFile: false,
 
