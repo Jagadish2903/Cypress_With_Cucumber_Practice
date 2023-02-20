@@ -1,21 +1,19 @@
 import BasePage from "./BasePage";
 import { loginPage } from "./LoginPage";
 
-
-
-class HomePage  extends BasePage{
+class HomePage extends BasePage {
   //page Objects (or) element locators (or) WebELements
-  headerText = `div h2`;
-  menuOptions = "div .css-tile-name";
+  headerText = `//h2[text()='Dashboard']`;
+  menuOptions = "//div[@class='css-tile-name']/span";
   UserManagementOption = `//div/span[text()='USER MANAGEMENT']`;
-  
 
   getHomePageHeaderText() {
-    return cy.get(this.headerText);
+   return  cy.xpath(this.headerText)
   }
 
   getmenuOptions() {
-    return cy.get(this.menuOptions);
+    return cy.xpath(this.menuOptions)
+    
   }
 
   doClickUserManagement() {
@@ -26,7 +24,7 @@ class HomePage  extends BasePage{
     return cy.url();
   }
 
-  getHomePageTitle(){
+  getHomePageTitle() {
     return cy.title();
   }
 
