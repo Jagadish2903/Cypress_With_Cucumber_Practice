@@ -734,7 +734,7 @@ input#darkCheck:checked ~ label>svg#moon {
                 
             </div>
             <h1>Feature:
-                <small>Login to the Application</small>
+                <small>Login Functionality Validation</small>
             </h1>
             
                 <p>
@@ -744,7 +744,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     login.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    BDDFramework/login.feature</p>
+                    features/login.feature</p>
             
         </div>
 
@@ -782,7 +782,7 @@ input#darkCheck:checked ~ label>svg#moon {
         <tr>
             <td class="chart">
                 <canvas id="scenario-chart"></canvas>
-                <div class="total">2</div>
+                <div class="total">1</div>
             </td>
             <td>
                 <table class="tile_info">
@@ -811,6 +811,11 @@ input#darkCheck:checked ~ label>svg#moon {
                 </table>
             </td>
         </tr>
+        
+            <tr>
+                <th> Total duration:</th>
+                <tr><td>00:00:08.568</td></tr>
+            </tr>
         
     </table>
 </div>
@@ -930,7 +935,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                 </div>
 
-                <h2>Scenario: <small>Naviagting to the Login Page</small></h2>
+                <h2>Scenario Outline: <small>Login Functionality Validation</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -947,12 +952,17 @@ input#darkCheck:checked ~ label>svg#moon {
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">7</span>
                         </li>
                     
 
                     
 
+                    
+                        <li>
+                            <span style="font-size:1.2em"> Duration:</span>
+                            <span style=padding-right:5em>00:00:08.568</span>
+                        </li>
                     
                 </ul>
 
@@ -977,228 +987,14 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Given </span>
 
                                     
-                                        User navigates to the URL
+                                        User navigates to the login page
                                         
                                     
 
                                     
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        User should land on the Login Page
                                         
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-
-                    
-                
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height: auto;">
-            <div class="x_title">
-
-                <div class="tags">
-                    
-                </div>
-
-                <h2>Scenario: <small>Login with valid credentials</small></h2>
-
-                <ul class="nav navbar-right panel_toolbox">
-                    <li>
-                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
-                    </li>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-                        <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
-                        </li>
-                    
-
-                    
-
-                    
-                </ul>
-
-                <div class="clearfix"></div>
-            </div>
-
-            <div class="x_content" style="display: none;">
-                <div class="scenario-step-container"></div>
-                    
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Given </span>
-
-                                    
-                                        User navigates to the URL
+                                            <span class="duration">00:00:03.579</span>
                                         
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">Then </span>
-
-                                    
-                                        User should land on the Login Page
-                                        
-                                    
-
                                     
 
                                 </div>
@@ -1253,10 +1049,14 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        User enters the Valid Login Username and Password
+                                        User enters the kalavathi.s@smc2.com and Password@567
                                         
                                     
 
+                                    
+                                        
+                                            <span class="duration">00:00:00.846</span>
+                                        
                                     
 
                                 </div>
@@ -1316,6 +1116,10 @@ input#darkCheck:checked ~ label>svg#moon {
                                     
 
                                     
+                                        
+                                            <span class="duration">00:00:00.134</span>
+                                        
+                                    
 
                                 </div>
 
@@ -1373,6 +1177,196 @@ input#darkCheck:checked ~ label>svg#moon {
                                         
                                     
 
+                                    
+                                        
+                                            <span class="duration">00:00:03.079</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        User should be presented with henry dashboard
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.534</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">And </span>
+
+                                    
+                                        User should see all the Menu Options
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.095</span>
+                                        
+                                    
+
+                                </div>
+
+                                
+                                    
+
+                                    
+
+                                    
+                                    
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                
+                            </div>
+
+                        
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                        
+
+                        
+
+                    
+                
+                        
+                            <div class="scenario-step-container">
+
+                                
+                                    
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
+                                        </div>
+                                    
+                                
+
+                                <div class="text">
+                                    <span class="keyword highlight">Then </span>
+
+                                    
+                                        User clicks Log out
+                                        
+                                    
+
+                                    
+                                        
+                                            <span class="duration">00:00:00.301</span>
+                                        
                                     
 
                                 </div>
@@ -1468,7 +1462,7 @@ input#darkCheck:checked ~ label>svg#moon {
                     ],
                     datasets: [{
                         data: [
-                            2,
+                            1,
                             0,
                             0,
                             0,

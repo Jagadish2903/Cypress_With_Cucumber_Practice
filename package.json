@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/cypress run",
-    "headed": "npm run test -- --headed",
-    "chrome": "D:/NewCypress/CypressAutomationPractice/node_modules/.bin/cypress -- --headed -- --browser chrome",
-    "dashboard": "D:/NewCypress/CypressAutomationPractice/node_modules/.bin/cypress --record --key da862c17-98aa-46a2-a604-0ac409afbe82 --headed --reporter mochawesome"
+    "test": "cypress run",
+    "headed": "cypress run --headed",
+    "chrome": "cypress run --headed --browser chrome --spec cypress/e2e/features/*.feature && node cucumber-html-report.js",
+    "firefox": "cypress run --headed --browser firefox --spec cypress/e2e/features/*.feature && node cucumber-html-report.js",
+    "dashboard": "cypress run --record --key da862c17-98aa-46a2-a604-0ac409afbe82 --headed"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "allure-commandline": "^2.20.1",
     "chai": "^4.3.7",
     "cypress": "^12.3.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-iframe": "^1.0.1",
     "cypress-multi-reporters": "^1.6.2",
     "mocha": "^10.2.0",
@@ -27,9 +29,13 @@
   "cypress-cucumber-preprocessor": {
     "json": {
       "enabled": true,
-      "output": "cypress/CucumberReports/results.json",
+      "output": "cypress/CucumberReports/Cucumber-json-report/cucumber-report.json",
       "nonGlobalStepDefinitions": false,
-      "stepDefinitions": "cypress/integration/step_definitions/**/*.js"
+      "stepDefinitions": "cypress/support/step_definitions/**/*.js",
+      "html": {
+        "enabled": true,
+        "output": "cypress/Reports/cucumber-html/cucumber-report.html"
+      }
     }
   },
   "dependencies": {

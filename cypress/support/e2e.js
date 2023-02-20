@@ -14,12 +14,15 @@
 // ***********************************************************
 // <reference types=”@shelex/cypress-allure-plugin” />
 // Import commands.js using ES2015 syntax:
+require('@cypress/xpath');
+import  '@cypress/xpath';
 import './commands'
 import '@shelex/cypress-allure-plugin';
+
+
 
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-require('@cypress/xpath');
-
+import "cypress-cucumber-attach-screenshots-to-failed-steps";

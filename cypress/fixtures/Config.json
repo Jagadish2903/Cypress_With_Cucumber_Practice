@@ -1,9 +1,15 @@
 {
+
+    "BaseUrl":"https://qaportal.henry.com/login", 
+    "userName":"kalavathi.s@smc2.com",
+    "passWord":"Password@567",
     "_LoginTestData": " This is a Comment for reference  ignore",
     
      "LoginPageText": "Sign In to your account",
     "LoginPageForgotpwdLink": "Forgot",
     "HomePageUrl": "https://qaportal.henry.com/home/dashboard",
     "LoginPageUrl": "https://qaportal.henry.com/login",
-    "SuccessLogin": "Dashboard"
+    "SuccessLogin": "Dashboard",
+    "LoginPageTitle": "Henry Company",
+    "HomePageTitle" : "Henry Company"
 }
