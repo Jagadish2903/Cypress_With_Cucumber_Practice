@@ -37,6 +37,8 @@ module.exports = defineConfig({
     
     setupNodeEvents, //calling from the above code 
    // supportFile: false,
+   chromeWebSecurity:false,
+   experimentalModifyObstructiveThirdPartyCode:true,
 
     projectId: "edjjgw",
     retries: {
