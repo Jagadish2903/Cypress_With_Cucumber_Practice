@@ -11,8 +11,8 @@ import LoginPage from "../pages_objects/LoginPage";
 const basePage = new BasePage();
 const loginPage = new LoginPage();
 
-beforeEach(function () {
-  cy.fixture("config.json").then(function (data) {
+beforeEach(() => {
+  cy.fixture("Config.json").then(function(data) {
     this.data = data; // to access the data and make it as a globally available object
   });
 });

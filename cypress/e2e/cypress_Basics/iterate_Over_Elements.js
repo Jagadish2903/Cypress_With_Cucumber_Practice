@@ -4,7 +4,7 @@ describe("Iterating over Elements using each method ", () => {
   it("Iterating over menu options and click on Curls to straight Shampoo", () => {
     cy.visit("https://automationteststore.com/");
     cy.get(`a[href*='product/category&path=']`).contains("Hair Care").click();
-    cy.get(".fixed").each(($e1, index, $list) => {
+    cy.get(".fixed a").each(($e1, index, $list) => {
       cy.log("index of " + index + " is" + $e1.text());
       if ($e1.text().includes("Curls to straight Shampoo")) {
         cy.wrap($e1).click();

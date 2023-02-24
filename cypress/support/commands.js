@@ -10,11 +10,25 @@
 //
 //
 // -- This is a parent command --
+
+
+
 // Cypress.Commands.add('login', (email, password) => { ... })
-Cypress.Commands.add('loginAs', (email, password) => {
+Cypress.Commands.add('doLogin', (email, password) => {
 cy.get('#mat-input-0').type(email)
         cy.get(`input[type='password']`).type(password)
         cy.get(`button[type='submit']`).click()
+})
+
+
+
+Cypress.Commands.add('selectProduct',(productName)=>{
+        cy.get(".fixed a").each(($e1, index, $list) => {
+                //cy.log("index of " + index + " is" + $e1.text());
+                if ($e1.text().includes(productName)) {
+                  cy.wrap($e1).click();
+                }
+        });
 })
 //
 // -- This is a child command --
